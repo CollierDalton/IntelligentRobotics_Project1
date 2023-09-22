@@ -52,3 +52,4 @@ if __name__ == '__main__':
         pass
     finally:
         termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
+
