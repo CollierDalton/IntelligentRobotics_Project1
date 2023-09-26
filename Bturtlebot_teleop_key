@@ -180,6 +180,7 @@ def calculate_min_ranges(filtered_ranges):
 if __name__ == "__main__":
     terminal_settings = termios.tcgetattr(sys.stdin)
 
+    #Sunscribers
     rospy.init_node('turtlebot_teleop')
     publisher = rospy.Publisher('~cmd_vel', Twist, queue_size=5)
     bumper_sensor_subscriber = rospy.Subscriber('/mobile_base/sensors/core', SensorState, handle_bumper_sensor)
